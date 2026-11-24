@@ -1,0 +1,30 @@
+body { margin: 2rem; font: 16px/1.5 Arial, sans-serif; color: #222; }
+* { box-sizing: border-box; }
+.app-shell { max-width: 1100px; margin: auto; }
+.content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: start; }
+.filters { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1rem; }
+label { display: block; }
+input, select, button { font: inherit; padding: .4rem; }
+input:not([type='checkbox']), select { display: block; width: 100%; }
+button { cursor: pointer; }
+button:disabled { cursor: default; opacity: .6; }
+fieldset { border: 0; padding: 0; margin: 0; }
+.form-panel { padding: 1rem; border: 1px solid #ccc; }
+.form-panel input, .form-panel select { margin-bottom: .8rem; }
+.checkbox-label { margin: 1rem 0; }
+.checkbox-label input { margin: 0; }
+.form-pair, .form-actions, .book-controls, .book-actions { display: flex; gap: .75rem; }
+.form-pair > div { flex: 1; min-width: 0; }
+.book-card { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; }
+.book-card h3 { margin: .5rem 0; overflow-wrap: anywhere; }
+.book-author { overflow-wrap: anywhere; }
+.book-topline { display: flex; justify-content: space-between; }
+.book-controls { align-items: end; flex-wrap: wrap; }
+.book-actions { margin-top: .75rem; }
+.stats-grid { display: flex; flex-wrap: wrap; gap: 2rem; }
+.stats-grid span, .stats-grid strong { display: block; }
+.stats-grid strong { font-size: 1.4rem; }
+.error { color: #a11919; }
+.success { color: #176337; }
+.list-message { padding: 1rem 0; }
+@media (max-width: 700px) { body { margin: 1rem; } .content-grid { grid-template-columns: 1fr; } }
