@@ -1,0 +1,21 @@
+{
+  "name": "reading-list-server",
+  "version": "1.0.0",
+  "description": "Assignment 9 in-memory Reading List REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=26" },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}
